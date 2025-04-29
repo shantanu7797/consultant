@@ -25,7 +25,7 @@ const auth = async (req, res, next) => {
 
     try {
 
-        const decoded = jwt.verify(payload, process.env.JWT_SECRET)
+        const decoded = jwt.verify(payload, "shantanu")
         
         const { mongoID, email } = decoded
 

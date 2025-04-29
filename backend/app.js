@@ -69,7 +69,7 @@ const start = async () => {
 
   try {
 
-    await connectDB(process.env.MONGODB_URI);
+    await connectDB('mongodb+srv://shantanukumar294212:2NZEUvAOAtHiT6hq@cluster00.l9hjn.mongodb.net/chat-app');
     
     app.listen(PORT, () => console.log(`Server is running at http://127.0.0.1:${PORT}`) )
 

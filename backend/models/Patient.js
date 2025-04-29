@@ -78,10 +78,10 @@ PatientSchema.methods.createJWT = function () {
     
     { mongoID: this._id, email: this.email },
     
-    process.env.JWT_SECRET,
+    "shantanu",
     
     {
-      expiresIn: process.env.JWT_LIFETIME
+      expiresIn: '1hr'
     }
 
   )

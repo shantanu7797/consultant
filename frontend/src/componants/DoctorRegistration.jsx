@@ -128,7 +128,7 @@ const DoctorRegistration = () => {
 
           // console.log(dataToSend)
 
-          await axios.post("/register/organizer", dataToSend)
+          await axios.post("http://127.0.0.1:5000/doctor/register/organizer", dataToSend)
             .then((response) => {
               console.log("Registered successfully")
               setIsLoading(false);
